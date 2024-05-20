@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente </h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!-- jeito de colocar um vídeo único (não recomendável por conta da compatibilidade necessária com diversos navegadores)
+    <video  src="midia/video.mp4" width="500" controls> </video> -->
+
+    <video poster="imagens/M.png" width="560" controls loop muted>
+        <source src="midia/Video3.mkv" type="">
+        <source src="midia/video.mp4" type="">
+        <source src="midia/Video2.webm" type="">
+    </video>
+
+    <h1>Inserindo vídeo do youtuba</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sXMsfmFR6Rc?si=L4r1BnDO4IxNFw7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- vídeo pego do incorporar do youtube  -->
+
+    <h1>Inserindo vídeo com vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/925007037?h=118272597f&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

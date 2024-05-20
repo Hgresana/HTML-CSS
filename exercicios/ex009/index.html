@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="I"> <!-- 1, A, a, I, i -->
+        <li>namorar</li> <!-- </li> é opcional -->
+        <li>cagar toco</li>
+        <li>jejuar no monte sião</li>
+        <li>incomodar alguém</li>
+        <li>cagar de novo</li>
+        <li>peidar bastante</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle"> <!-- disc(padrão), circle & square. -->
+        <li>linguiça estragada</li>
+        <li>pó da rabiola</li>
+        <li>livro dos mormons</li>
+        <li>Jesus</li>
+    </ul>
+    <h2>Lista ordenada dentro de uma lista ordenada</h2>
+    <ol>
+        <li>Senai</li>
+        <ol type="A">
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+        </ol>
+        <li>Atualmente</li>
+        <ol type="A" start="4"> <!-- mesmo se for letra, p começar com outro tem q ser com númeral -->
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>      
+    </ol>
+    <h2>Lista não ordenada dentro de uma lista ordenada</h2>
+    <ol>
+        <li>Xbox</li>
+        <ul type="disc">
+           <li>GTA</li>
+           <ul type="circle">
+            <li>GTA IV</li>
+            <li>GTA V</li>
+           </ul>
+           <li>Midnight club</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="disc">
+            <li>God of war</li>
+            <li>Little big planet</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição</h2> <!-- Menos utilizada -->
+    <dl>
+        <dt>Termo</dt>
+        <dd>Significado</dd>
+        <dt>Teologia da prosperidade</dt>
+        <dd>Forma de colocar o Deus todo poderoso unicamente como um enriquecedor daqueles que o buscam</dd>
+    </dl>
+</body>
+</html>
