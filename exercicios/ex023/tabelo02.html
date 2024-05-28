@@ -8,38 +8,67 @@
 
     table{
         border-collapse: collapse;
-        width: 400px;
+        width: 500px;
+        position: relative;
+    }
+
+    caption{
+        background-color: gainsboro;
+        color: black;
+        font-size: 1.4em;
+        padding: 10px;
+        font-weight: bold;
     }
     
+    thead, tfoot{ 
+        background-color: rgb(31, 31, 31);
+        color: white;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: 0;
+        background-color: rgb(31, 31, 31);
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: gray;
+    }
+
     td, th{
         padding: 10px;
         border: 1px solid black;
-      }
-
-    thead, tfoot{ 
-        background-color: gray;
-        color: white;
     }
 
     .num{
         text-align: right;
     }
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Minas Gerais</td>
                 <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Jerusalém</td>
+                <td class="num">12 538 718	</td>
+            </tr>
+            <tr>
+                <td>Samaria</td>
+                <td class="num">13 293 318	</td>
             </tr>
             <tr>
                 <td> Rio de Janeiro	</td>
@@ -52,10 +81,31 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Totalização</th>
+                <th scope="row">Totalização</th>
                 <th class="num">000</th>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil similique aspernatur, blanditiis illum temporibus architecto sequi consequuntur commodi unde eum iste, sit, nesciunt eaque praesentium omnis eos enim magnam consectetur.
+    Eum vero est laborum libero, iste vitae maiores esse, aut numquam nostrum perferendis eos asperiores neque totam dolor dolores atque modi! A voluptatibus aliquid sapiente quaerat ab. Quibusdam, facere dicta.
+    Temporibus rem voluptatem quos fugit nisi maiores rerum veniam recusandae sit sed sequi totam dolor quas quae id hic deleniti laudantium, officiis earum perferendis vel reprehenderit! Doloremque ut dignissimos est.
+    Esse rerum quasi doloremque inventore consequatur ratione iusto enim in soluta debitis quibusdam deserunt asperiores, provident nihil ut, cumque recusandae at. Dolores aperiam voluptates a rerum reprehenderit asperiores. Et, ipsam.
+    Deleniti, accusamus eos amet unde voluptates molestiae repellat enim facere dolore et fugit alias ut ratione ab, aut deserunt quibusdam quidem voluptatum voluptate quis animi, eum vel? Reprehenderit, a sed.
+    Temporibus, iusto asperiores ratione velit excepturi voluptates ipsa, cupiditate suscipit ducimus est facilis corrupti maxime rerum ipsam quia et deserunt neque officiis omnis, id exercitationem? Culpa at laboriosam suscipit rem?
+    Fugit voluptatum velit repudiandae voluptates nostrum cupiditate possimus modi nemo? Unde itaque deserunt, atque distinctio ea sit. Asperiores incidunt, autem tempore quibusdam neque nemo quas tenetur nesciunt quidem, odit voluptates!
+    Nobis, exercitationem possimus! Nulla accusamus quam dolorum porro, ullam ratione perferendis laudantium nisi, aperiam culpa ut facere deleniti, suscipit dolor atque voluptatibus cumque tenetur placeat! A, laboriosam quibusdam. Nam, nihil!
+    Similique culpa quos expedita maxime. Nihil, recusandae? Similique ducimus iure aliquid vero. Ea, dolore atque. Saepe non accusamus architecto dignissimos! Odio facere, aspernatur quam animi quis ducimus fugiat aliquid explicabo.
+    Exercitationem laborum, ipsa animi, cumque at iusto deserunt quas, atque ipsam commodi nisi tenetur excepturi? Corrupti hic delectus modi officia dignissimos, voluptatem magnam ut, a, veritatis repellat placeat provident. Voluptates.
+    Dolorem voluptatibus quod minus magnam laborum est dolores atque nostrum alias doloremque perspiciatis eum blanditiis ab quas deserunt earum necessitatibus, ducimus vel tempora quaerat in amet? Eos at vero vitae.
+    Nobis temporibus facilis excepturi quisquam officia impedit quae aperiam porro nihil cumque, recusandae corrupti id eveniet repellat accusamus quam et iure nulla illo maxime, ea asperiores ullam. Repudiandae, recusandae qui?
+    Consequatur accusamus nihil repellat doloribus nulla provident? Tempore ratione recusandae obcaecati quisquam veritatis quae, blanditiis sed eaque quos minima? Dolor quod nihil eligendi quibusdam laboriosam nulla dolorem, iusto voluptatum magni?
+    Iusto omnis amet sed dicta provident necessitatibus architecto mollitia earum repellat pariatur. Aliquam distinctio doloribus ab explicabo cupiditate qui dolorum ad deserunt minima, nemo culpa, illo, sint suscipit asperiores. Quod.
+    Amet illum, at aliquid illo molestias recusandae fugiat quis quae. Aperiam error similique quos iure officiis quisquam magni animi illo, beatae nostrum quibusdam qui eos deserunt doloribus at eligendi. Numquam.
+    Molestiae ex asperiores voluptate nisi quaerat quo temporibus repellendus facilis, beatae dolores nulla necessitatibus rem, praesentium neque enim officiis saepe iusto nam voluptates ratione consectetur molestias in? Expedita, distinctio repellendus.
+    Voluptatum ipsa, sequi ad beatae nam iste officiis odit quos magnam dolor, error quod nisi ex distinctio maiores hic doloribus iure! Rem aspernatur neque quibusdam dolores minus quia? Est, eos.
+    Repudiandae adipisci consectetur illo numquam saepe dolorem voluptas illum earum ea reprehenderit deserunt odit labore tenetur quae quasi aliquam, autem totam enim. Laborum beatae rem aspernatur placeat modi perspiciatis cupiditate?
+    Eligendi accusantium, corrupti omnis quasi aspernatur expedita eum! Iste quasi aspernatur ipsam suscipit ea fugiat amet non provident eos nihil molestiae, sunt autem voluptate assumenda deserunt voluptatem quam nisi saepe?
+    Quam officia inventore deleniti omnis assumenda porro quia atque error sequi! Et exercitationem repellat rem delectus corporis fugit modi, quidem cum amet laborum aut quo odit tempora consequatur minima maiores!</p>
 </body>
 </html>
