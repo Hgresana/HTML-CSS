@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            border: 1px solid black;
+            font-size: 1.5em;
+        }
+        
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Jusefá</td>
+                <td>Jesus</td>
+                <td>Hulk</td>
+                <td>Favela</td>
+            </tr>
+            <tr>
+                <td>Jusefá</td>
+                <td>Jesus</td>
+                <td>Hulk</td>
+                <td>Favela</td>
+            </tr>
+            <tr>
+                <td>Jusefá</td>
+                <td>Jesus</td>
+                <td>Hulk</td>
+                <td>Favela</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Junior</td>
+                <td>Hobbit</td>
+                <td>Lotr</td>
+                <td>De volta</td>
+            </tr>
+            <tr>
+                <td>Junior</td>
+                <td>Hobbit</td>
+                <td>Lotr</td>
+                <td>De volta</td>
+            </tr>
+            <tr>
+                <td>Junior</td>
+                <td>Hobbit</td>
+                <td>Lotr</td>
+                <td>De volta</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
