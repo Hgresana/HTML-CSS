@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="Estado" id="iest">
+                <optgroup label="Várzea Grande">
+                    <option value="SP">Sampa</option>
+                    <option value="RJ">Fuzil</option>
+                    <option value="RS">Gauchada</option>
+                </optgroup>
+
+                <optgroup label="Várzea">
+                    <option value="MG">Queijo</option>
+                    <option value="SC" selected>Floripa</option>
+                    <option value="RN">Chimiã</option>
+                </optgroup>             
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Admim</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option>Fazendeiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="iMSM">Mensagem</label>
+            <textarea name="msg" id="iMSM" placeholder="escreva aqui"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
