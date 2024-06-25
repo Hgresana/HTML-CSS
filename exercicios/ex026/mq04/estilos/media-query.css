@@ -2,7 +2,7 @@
 
 /* todas as mídias */
 
-@media print {
+@media print { /* css não permite usarmos background-image no media print */
     body {
         background-image: url(../img/back-print.jpg);
       }
